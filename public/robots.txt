@@ -5,4 +5,4 @@ Allow: /vehicles
 Allow: /services
 Allow: /contact
 
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://a75mobility.vercel.app/sitemap.xml
