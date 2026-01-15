@@ -37,11 +37,11 @@ const VehicleCategories = () => {
               Vehicle Categories
             </span>
           </div>
-          
+
           <h2 className="text-4xl md:text-5xl font-bold text-[#0B1A33] mb-6">
             Choose Your Category
           </h2>
-          
+
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Whether you need an eco-friendly electric vehicle or a reliable fuel-powered option, we have the perfect mobility solution for your needs.
           </p>
@@ -50,13 +50,13 @@ const VehicleCategories = () => {
         {/* Categories Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {categories.map((category, index) => (
-            <div 
+            <div
               key={index}
-              className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group cursor-pointer"
+              className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group cursor-pointer flex flex-col"
             >
               {/* Image */}
               <div className="relative overflow-hidden h-64">
-                <img 
+                <img
                   src={category.image}
                   alt={category.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -66,34 +66,44 @@ const VehicleCategories = () => {
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
-              
+
               {/* Content */}
-              <div className="p-8">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-[#F29F05]/10 rounded-xl flex items-center justify-center mr-4">
-                    <i className={`${category.icon} text-2xl text-[#F29F05]`}></i>
-                  </div>
-                  <h3 className="text-2xl font-bold text-[#0B1A33]">
-                    {category.title}
-                  </h3>
-                </div>
-                
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  {category.description}
-                </p>
-                
-                {/* Features */}
-                <div className="space-y-2 mb-6">
-                  {category.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center text-sm text-gray-600">
-                      <i className="ri-check-line text-[#F29F05] mr-2"></i>
-                      {feature}
+              <div className="p-8 flex-1 flex flex-col">
+                {/* Title Section */}
+                <div className="mb-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-14 h-14 bg-[#F29F05]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <i className={`${category.icon} text-2xl text-[#F29F05]`}></i>
                     </div>
-                  ))}
+                    <h3 className="text-2xl font-bold text-[#0B1A33]">
+                      {category.title}
+                    </h3>
+                  </div>
+
+                  <p className="text-gray-600 leading-relaxed">
+                    {category.description}
+                  </p>
                 </div>
-                
-                <button className="w-full bg-[#0B1A33] text-white py-3 rounded-lg font-semibold hover:bg-[#1E5AA8] transition-colors cursor-pointer whitespace-nowrap">
+
+                {/* Features Grid */}
+                <div className="mb-8 flex-grow">
+                  <h4 className="text-sm font-semibold text-[#0B1A33] uppercase tracking-wide mb-4">
+                    Key Features
+                  </h4>
+                  <div className="grid grid-cols-2 gap-3">
+                    {category.features.map((feature, featureIndex) => (
+                      <div key={featureIndex} className="flex items-start gap-2">
+                        <i className="ri-check-line text-[#F29F05] text-lg mt-0.5 flex-shrink-0"></i>
+                        <span className="text-sm text-gray-700 leading-tight">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* CTA Button */}
+                <button className="w-full bg-[#0B1A33] text-white py-3.5 rounded-lg font-semibold hover:bg-[#1E5AA8] transition-all duration-300 cursor-pointer group-hover:shadow-lg mt-auto">
                   View Models
+                  <i className="ri-arrow-right-line ml-2"></i>
                 </button>
               </div>
             </div>
