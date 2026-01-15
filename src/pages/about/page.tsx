@@ -4,7 +4,6 @@ import Header from '../../components/feature/Header';
 import Footer from '../../components/feature/Footer';
 import HeroSection from './components/HeroSection';
 import StorySection from './components/StorySection';
-import TeamSection from './components/TeamSection';
 import ValuesSection from './components/ValuesSection';
 import StatsSection from './components/StatsSection';
 
@@ -12,7 +11,7 @@ const AboutPage = () => {
   useEffect(() => {
     // Update document title and meta tags
     document.title = 'About A75 Mobility Ghana - Electric Vehicle Leaders West Africa';
-    
+
     // Update meta description
     let metaDescription = document.querySelector('meta[name="description"]');
     if (!metaDescription) {
@@ -21,7 +20,7 @@ const AboutPage = () => {
       document.head.appendChild(metaDescription);
     }
     metaDescription.setAttribute('content', 'Learn about A75 Electric & Fuel-Powered Mobility Ltd - Ghana\'s leading electric vehicle company. Our mission, values, and commitment to sustainable transportation solutions across West Africa.');
-    
+
     // Update meta keywords
     let metaKeywords = document.querySelector('meta[name="keywords"]');
     if (!metaKeywords) {
@@ -30,7 +29,7 @@ const AboutPage = () => {
       document.head.appendChild(metaKeywords);
     }
     metaKeywords.setAttribute('content', 'about A75 mobility, electric vehicle company Ghana, sustainable transportation leaders, West Africa mobility solutions, EV innovation Ghana');
-    
+
     // Update canonical URL
     let canonical = document.querySelector('link[rel="canonical"]');
     if (!canonical) {
@@ -39,7 +38,7 @@ const AboutPage = () => {
       document.head.appendChild(canonical);
     }
     canonical.setAttribute('href', `${import.meta.env.VITE_SITE_URL || 'https://example.com'}/about`);
-    
+
     // Add Schema.org JSON-LD
     const script = document.createElement('script');
     script.type = 'application/ld+json';
@@ -62,7 +61,7 @@ const AboutPage = () => {
       }
     });
     document.head.appendChild(script);
-    
+
     return () => {
       document.head.removeChild(script);
       if (metaDescription && metaDescription.parentNode) {
@@ -88,7 +87,6 @@ const AboutPage = () => {
         <StorySection />
         <ValuesSection />
         <StatsSection />
-        <TeamSection />
       </main>
       <Footer />
     </div>
