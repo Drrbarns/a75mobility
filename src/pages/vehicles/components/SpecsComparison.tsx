@@ -55,11 +55,11 @@ const SpecsComparison = () => {
               Vehicle Comparison
             </span>
           </div>
-          
+
           <h2 className="text-4xl md:text-5xl font-bold text-[#0B1A33] mb-6">
             Electric vs Fuel-Powered
           </h2>
-          
+
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Compare the key differences between our electric and fuel-powered vehicles to make an informed decision that suits your lifestyle and budget.
           </p>
@@ -90,7 +90,7 @@ const SpecsComparison = () => {
 
           {/* Comparison Rows */}
           {comparisonData.map((row, index) => (
-            <div 
+            <div
               key={index}
               className={`grid grid-cols-3 ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'} hover:bg-blue-50 transition-colors`}
             >
@@ -130,9 +130,12 @@ const SpecsComparison = () => {
               <p className="mb-6 opacity-90">
                 Join the sustainable mobility revolution with zero emissions and lower operating costs.
               </p>
-              <button className="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors cursor-pointer whitespace-nowrap">
+              <a
+                href="#featured-vehicles"
+                className="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors cursor-pointer whitespace-nowrap inline-block"
+              >
                 Explore Electric Models
-              </button>
+              </a>
             </div>
           </div>
 
@@ -147,9 +150,12 @@ const SpecsComparison = () => {
               <p className="mb-6 opacity-90">
                 Reliable performance with proven technology and extensive service network coverage.
               </p>
-              <button className="bg-[#F29F05] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#e89004] transition-colors cursor-pointer whitespace-nowrap">
+              <a
+                href="#featured-vehicles"
+                className="bg-[#F29F05] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#e89004] transition-colors cursor-pointer whitespace-nowrap inline-block"
+              >
                 Explore Fuel Models
-              </button>
+              </a>
             </div>
           </div>
         </div>

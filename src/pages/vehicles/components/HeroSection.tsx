@@ -1,20 +1,14 @@
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
+  // ...
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('https://readdy.ai/api/search-image?query=Modern%20electric%20vehicle%20showroom%20in%20Ghana%20with%20sleek%20EVs%20on%20display%2C%20contemporary%20automotive%20dealership%20with%20bright%20lighting%2C%20clean%20white%20background%20showcasing%20various%20electric%20cars%20and%20motorcycles%20in%20professional%20setting&width=1920&height=1080&seq=vehicles-hero&orientation=landscape')`
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0B1A33]/90 via-[#0B1A33]/70 to-transparent"></div>
-      </div>
-
+      {/* ... */}
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-32">
         <div className="max-w-3xl">
+          {/* ... */}
           <div className="mb-6">
             <span className="inline-block px-4 py-2 bg-[#F29F05]/20 text-[#F29F05] rounded-full text-sm font-semibold backdrop-blur-sm">
               Our Vehicle Fleet
@@ -31,12 +25,18 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-            <button className="bg-[#F29F05] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#e89004] transition-all transform hover:scale-105 cursor-pointer shadow-lg hover:shadow-xl">
+            <a
+              href="#categories"
+              className="bg-[#F29F05] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#e89004] transition-all transform hover:scale-105 cursor-pointer shadow-lg hover:shadow-xl text-center"
+            >
               Browse Vehicles
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-[#0B1A33] transition-all cursor-pointer shadow-lg hover:shadow-xl">
+            </a>
+            <Link
+              to="/contact"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-[#0B1A33] transition-all cursor-pointer shadow-lg hover:shadow-xl text-center"
+            >
               Schedule Test Drive
-            </button>
+            </Link>
           </div>
         </div>
       </div>

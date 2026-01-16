@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#0B1A33] via-[#1E5AA8] to-[#0B1A33]">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url('https://readdy.ai/api/search-image?query=Modern%20electric%20vehicle%20assembly%20facility%20in%20Ghana%20with%20African%20engineers%20working%20on%20sustainable%20mobility%20solutions%2C%20clean%20industrial%20environment%20with%20solar%20panels%20and%20green%20technology%2C%20professional%20automotive%20manufacturing%20setting%20with%20bright%20lighting%20and%20organized%20workspace&width=1920&height=1080&seq=about-hero&orientation=landscape')`
@@ -20,23 +21,29 @@ const HeroSection = () => {
               About A75 Mobility
             </span>
           </div>
-          
+
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
             Driving Ghana's
             <span className="text-[#F29F05] block">Mobility Future</span>
           </h1>
-          
+
           <p className="text-xl text-gray-200 mb-12 leading-relaxed max-w-2xl">
             We are pioneering the transformation of Ghana's transportation landscape through innovative electric and fuel-powered vehicle solutions, creating sustainable mobility for all.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6">
-            <button className="bg-[#F29F05] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#e89004] transition-all transform hover:scale-105 cursor-pointer whitespace-nowrap">
+            <a
+              href="#story"
+              className="bg-[#F29F05] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#e89004] transition-all transform hover:scale-105 cursor-pointer whitespace-nowrap text-center"
+            >
               Our Story
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-[#0B1A33] transition-all cursor-pointer whitespace-nowrap">
-              Meet Our Team
-            </button>
+            </a>
+            <Link
+              to="/contact"
+              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-[#0B1A33] transition-all cursor-pointer whitespace-nowrap text-center"
+            >
+              Contact Us
+            </Link>
           </div>
         </div>
       </div>

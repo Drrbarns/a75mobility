@@ -1,12 +1,14 @@
+import { Link } from 'react-router-dom';
+
 const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-[#0B1A33] via-[#1E5AA8]/20 to-[#0B1A33]">
-      {/* Animated Background Elements */}
+      {/* ... (background elements unchanged) ... */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Floating Orbs */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-[#1E5AA8]/20 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#F29F05]/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-        
+
         {/* Grid Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
@@ -26,7 +28,7 @@ const HeroSection = () => {
       {/* Main Content Container */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 py-24 sm:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          
+
           {/* Left Content */}
           <div className="text-white space-y-6 sm:space-y-8">
             {/* Badge */}
@@ -51,18 +53,18 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-              <a 
-                href="/vehicles"
+              <Link
+                to="/vehicles"
                 className="bg-[#F29F05] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#e89004] transition-all transform hover:scale-105 text-center cursor-pointer whitespace-nowrap"
               >
                 Explore Vehicles
-              </a>
-              <a 
-                href="/contact"
+              </Link>
+              <Link
+                to="/contact"
                 className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-[#0B1A33] transition-all transform hover:scale-105 text-center cursor-pointer whitespace-nowrap"
               >
                 Partner With Us
-              </a>
+              </Link>
             </div>
 
             {/* Stats Bar */}
@@ -86,7 +88,7 @@ const HeroSection = () => {
           <div className="relative mt-8 lg:mt-0">
             {/* Main Image Card */}
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10">
-              <img 
+              <img
                 src="https://readdy.ai/api/search-image?query=Modern%20sleek%20electric%20vehicle%20in%20professional%20studio%20lighting%20with%20clean%20white%20background%2C%20futuristic%20EV%20car%20design%2C%20sustainable%20mobility%20technology%2C%20high-end%20automotive%20photography%2C%20metallic%20blue%20and%20orange%20accent%20lighting%2C%20minimalist%20professional%20product%20shot%2C%20cutting-edge%20vehicle%20innovation&width=800&height=900&seq=hero-ev-main&orientation=portrait"
                 alt="Electric Vehicle"
                 className="w-full h-full object-cover object-top"

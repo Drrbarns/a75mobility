@@ -46,7 +46,7 @@ const FeaturedVehicles = () => {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section id="featured-vehicles" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
@@ -55,11 +55,11 @@ const FeaturedVehicles = () => {
               Featured Vehicles
             </span>
           </div>
-          
+
           <h2 className="text-4xl md:text-5xl font-bold text-[#0B1A33] mb-6">
             Popular Models
           </h2>
-          
+
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Discover our most popular vehicles that combine cutting-edge technology, exceptional performance, and outstanding value for money.
           </p>
@@ -68,7 +68,7 @@ const FeaturedVehicles = () => {
         {/* Vehicles Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8" data-product-shop>
           {vehicles.map((vehicle, index) => (
-            <div 
+            <div
               key={index}
               className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 group"
             >
@@ -79,10 +79,10 @@ const FeaturedVehicles = () => {
                     {vehicle.badge}
                   </span>
                 </div>
-                
+
                 {/* Image */}
                 <div className="relative overflow-hidden h-64">
-                  <img 
+                  <img
                     src={vehicle.image}
                     alt={vehicle.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -90,7 +90,7 @@ const FeaturedVehicles = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 </div>
               </div>
-              
+
               {/* Content */}
               <div className="p-6">
                 <div className="mb-4">
@@ -104,7 +104,7 @@ const FeaturedVehicles = () => {
                     {vehicle.price}
                   </div>
                 </div>
-                
+
                 {/* Specs */}
                 <div className="grid grid-cols-2 gap-4 mb-6 p-4 bg-gray-50 rounded-xl">
                   {Object.entries(vehicle.specs).map(([key, value], specIndex) => (
@@ -118,7 +118,7 @@ const FeaturedVehicles = () => {
                     </div>
                   ))}
                 </div>
-                
+
                 {/* Features */}
                 <div className="space-y-2 mb-6">
                   {vehicle.features.map((feature, featureIndex) => (
@@ -128,15 +128,21 @@ const FeaturedVehicles = () => {
                     </div>
                   ))}
                 </div>
-                
+
                 {/* Actions */}
                 <div className="space-y-3">
-                  <button className="w-full bg-[#F29F05] text-white py-3 rounded-lg font-semibold hover:bg-[#e89004] transition-colors cursor-pointer whitespace-nowrap">
+                  <Link
+                    to="/contact"
+                    className="w-full bg-[#F29F05] text-white py-3 rounded-lg font-semibold hover:bg-[#e89004] transition-colors cursor-pointer whitespace-nowrap block text-center"
+                  >
                     View Details
-                  </button>
-                  <button className="w-full border-2 border-[#0B1A33] text-[#0B1A33] py-3 rounded-lg font-semibold hover:bg-[#0B1A33] hover:text-white transition-colors cursor-pointer whitespace-nowrap">
+                  </Link>
+                  <Link
+                    to="/contact"
+                    className="w-full border-2 border-[#0B1A33] text-[#0B1A33] py-3 rounded-lg font-semibold hover:bg-[#0B1A33] hover:text-white transition-colors cursor-pointer whitespace-nowrap block text-center"
+                  >
                     Schedule Test Drive
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -145,9 +151,12 @@ const FeaturedVehicles = () => {
 
         {/* View All Button */}
         <div className="text-center mt-12">
-          <button className="bg-[#0B1A33] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#1E5AA8] transition-colors cursor-pointer whitespace-nowrap">
-            View All Vehicles
-          </button>
+          <Link
+            to="/contact"
+            className="bg-[#0B1A33] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#1E5AA8] transition-colors cursor-pointer whitespace-nowrap inline-block"
+          >
+            Inquire About Availability
+          </Link>
         </div>
       </div>
     </section>

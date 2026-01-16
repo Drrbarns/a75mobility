@@ -28,7 +28,7 @@ const VehicleCategories = () => {
   ];
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section id="categories" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
@@ -101,10 +101,13 @@ const VehicleCategories = () => {
                 </div>
 
                 {/* CTA Button */}
-                <button className="w-full bg-[#0B1A33] text-white py-3.5 rounded-lg font-semibold hover:bg-[#1E5AA8] transition-all duration-300 cursor-pointer group-hover:shadow-lg mt-auto">
-                  View Models
+                <Link
+                  to="/contact"
+                  className="w-full bg-[#0B1A33] text-white py-3.5 rounded-lg font-semibold hover:bg-[#1E5AA8] transition-all duration-300 cursor-pointer group-hover:shadow-lg mt-auto text-center block"
+                >
+                  Inquire Now
                   <i className="ri-arrow-right-line ml-2"></i>
-                </button>
+                </Link>
               </div>
             </div>
           ))}

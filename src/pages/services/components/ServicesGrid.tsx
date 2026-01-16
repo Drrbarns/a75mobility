@@ -76,7 +76,7 @@ const ServicesGrid = () => {
   ];
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section id="services-grid" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
@@ -85,11 +85,11 @@ const ServicesGrid = () => {
               What We Offer
             </span>
           </div>
-          
+
           <h2 className="text-4xl md:text-5xl font-bold text-[#0B1A33] mb-6">
             Comprehensive Services
           </h2>
-          
+
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             We provide end-to-end mobility solutions, from importing vehicles to building charging infrastructure, ensuring a complete ecosystem for sustainable transportation.
           </p>
@@ -98,21 +98,21 @@ const ServicesGrid = () => {
         {/* Services Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
-            <div 
+            <div
               key={index}
               className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
             >
               <div className="grid grid-cols-1 md:grid-cols-2">
                 {/* Image */}
                 <div className="relative overflow-hidden h-64 md:h-auto">
-                  <img 
+                  <img
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0B1A33]/20 to-transparent"></div>
                 </div>
-                
+
                 {/* Content */}
                 <div className="p-8">
                   <div className="flex items-center mb-4">
@@ -123,11 +123,11 @@ const ServicesGrid = () => {
                       {service.title}
                     </h3>
                   </div>
-                  
+
                   <p className="text-gray-600 mb-6 leading-relaxed">
                     {service.description}
                   </p>
-                  
+
                   {/* Features */}
                   <div className="space-y-2 mb-6">
                     {service.features.map((feature, featureIndex) => (
@@ -137,10 +137,13 @@ const ServicesGrid = () => {
                       </div>
                     ))}
                   </div>
-                  
-                  <button className="bg-[#0B1A33] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#1E5AA8] transition-colors cursor-pointer whitespace-nowrap">
+
+                  <Link
+                    to="/contact"
+                    className="bg-[#0B1A33] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#1E5AA8] transition-colors cursor-pointer whitespace-nowrap inline-block"
+                  >
                     Learn More
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

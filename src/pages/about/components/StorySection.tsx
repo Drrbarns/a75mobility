@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom';
 
 const StorySection = () => {
   return (
-    <section className="py-24 bg-white">
+    <section id="story" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
@@ -11,21 +12,21 @@ const StorySection = () => {
                 Our Journey
               </span>
             </div>
-            
+
             <h2 className="text-4xl md:text-5xl font-bold text-[#0B1A33] mb-8 leading-tight">
               Building Tomorrow's
               <span className="text-[#1E5AA8] block">Transportation Today</span>
             </h2>
-            
+
             <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
               <p>
                 Founded as a subsidiary of A75 Enterprise Group Ltd, A75 Mobility emerged from a vision to revolutionize Ghana's transportation sector through sustainable and innovative mobility solutions.
               </p>
-              
+
               <p>
                 Our journey began with a simple yet powerful belief: that every Ghanaian deserves access to reliable, efficient, and environmentally conscious transportation options. Today, we stand at the forefront of the electric vehicle revolution in West Africa.
               </p>
-              
+
               <p>
                 From importing cutting-edge electric vehicles to establishing local assembly operations, we're not just bringing technology to Ghana – we're building the infrastructure and expertise that will power our nation's sustainable future.
               </p>
@@ -51,26 +52,26 @@ const StorySection = () => {
               ))}
             </div>
 
-            <a 
-              href="/vehicles"
-              className="inline-flex items-center space-x-2 bg-[#F29F05] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#e89004] transition-all transform hover:scale-105 cursor-pointer whitespace-nowrap"
+            <Link
+              to="/vehicles"
+              className="inline-flex items-center space-x-2 bg-[#F29F05] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#e89004] transition-all transform hover:scale-105 cursor-pointer whitespace-nowrap mt-8"
             >
               <span>Explore Our Vehicles</span>
               <i className="ri-arrow-right-line"></i>
-            </a>
+            </Link>
           </div>
 
           {/* Image */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img 
+              <img
                 src="https://readdy.ai/api/search-image?query=African%20business%20leaders%20and%20engineers%20in%20modern%20office%20discussing%20electric%20vehicle%20plans%20with%20Ghana%20map%20and%20sustainable%20transportation%20charts%2C%20professional%20corporate%20environment%20with%20natural%20lighting%20and%20contemporary%20design&width=600&height=800&seq=story-image&orientation=portrait"
                 alt="A75 Mobility Leadership Team"
                 className="w-full h-[600px] object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B1A33]/20 to-transparent"></div>
             </div>
-            
+
             {/* Floating Stats */}
             <div className="absolute -bottom-8 -left-8 bg-white rounded-2xl shadow-xl p-6 border border-gray-100">
               <div className="text-center">
@@ -78,7 +79,7 @@ const StorySection = () => {
                 <div className="text-sm text-gray-600">Vehicles Imported</div>
               </div>
             </div>
-            
+
             <div className="absolute -top-8 -right-8 bg-white rounded-2xl shadow-xl p-6 border border-gray-100">
               <div className="text-center">
                 <div className="text-3xl font-bold text-[#1E5AA8] mb-2">50+</div>

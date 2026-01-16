@@ -60,7 +60,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section id="contact-form" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Form */}
@@ -71,11 +71,11 @@ const ContactForm = () => {
                   Send Message
                 </span>
               </div>
-              
+
               <h2 className="text-4xl md:text-5xl font-bold text-[#0B1A33] mb-6">
                 Get in Touch
               </h2>
-              
+
               <p className="text-xl text-gray-600 leading-relaxed">
                 Ready to transform your mobility experience? Fill out the form below and our team will get back to you within 24 hours.
               </p>
@@ -98,7 +98,7 @@ const ContactForm = () => {
                     placeholder="Enter your full name"
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="email" className="block text-sm font-semibold text-[#0B1A33] mb-2">
                     Email Address *
@@ -131,7 +131,7 @@ const ContactForm = () => {
                     placeholder="+233 XXX XXX XXX"
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="company" className="block text-sm font-semibold text-[#0B1A33] mb-2">
                     Company Name
@@ -227,7 +227,7 @@ const ContactForm = () => {
               <h3 className="text-2xl font-bold text-[#0B1A33] mb-6">
                 Contact Information
               </h3>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="w-12 h-12 bg-[#F29F05]/10 rounded-xl flex items-center justify-center mr-4 mt-1">
@@ -285,7 +285,7 @@ const ContactForm = () => {
                     { icon: 'ri-instagram-fill', href: '#' },
                     { icon: 'ri-twitter-x-fill', href: '#' }
                   ].map((social, index) => (
-                    <a 
+                    <a
                       key={index}
                       href={social.href}
                       className="w-10 h-10 bg-[#F29F05]/10 hover:bg-[#F29F05] rounded-lg flex items-center justify-center text-[#F29F05] hover:text-white transition-all cursor-pointer"

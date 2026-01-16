@@ -1,4 +1,6 @@
 
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
   return (
     <footer className="bg-[#0B1A33] text-white relative overflow-hidden">
@@ -13,15 +15,17 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Company Info */}
           <div className="md:col-span-2">
-            <img 
-              src="https://static.readdy.ai/image/8e94e1476ded2dfd78d904370fe1b75f/2d03cd848508ad7f9450a728efdf925a.png" 
-              alt="A75 Electric & Fuel-Powered Mobility Ltd - Ghana Electric Vehicle Company Logo" 
-              className="h-12 mb-4"
-            />
+            <div className="bg-white/10 p-2 rounded-lg inline-block mb-4 backdrop-blur-sm">
+              <img
+                src="/logo.png"
+                alt="A75 Electric & Fuel-Powered Mobility Ltd - Ghana Electric Vehicle Company Logo"
+                className="h-12"
+              />
+            </div>
             <p className="text-gray-300 mb-4">
               Leading provider of <strong>electric and fuel-powered vehicles in Ghana</strong>, specializing in sustainable mobility solutions across West Africa.
             </p>
-            
+
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
@@ -30,14 +34,14 @@ const Footer = () => {
                 </div>
                 <span className="text-[#C9CED8]">+233 503 336 665</span>
               </div>
-              
+
               <div className="flex items-center space-x-3">
                 <div className="w-8 h-8 bg-[#F29F05]/20 rounded-lg flex items-center justify-center">
                   <i className="ri-mail-line text-[#F29F05]"></i>
                 </div>
                 <span className="text-[#C9CED8]">info@a75mobility.com</span>
               </div>
-              
+
               <div className="flex items-center space-x-3">
                 <div className="w-8 h-8 bg-[#F29F05]/20 rounded-lg flex items-center justify-center">
                   <i className="ri-map-pin-line text-[#F29F05]"></i>
@@ -58,13 +62,13 @@ const Footer = () => {
                 { label: 'Services', href: '/services' },
                 { label: 'Contact', href: '/contact' }
               ].map((link, index) => (
-                <a 
+                <Link
                   key={index}
-                  href={link.href} 
+                  to={link.href}
                   className="block text-[#C9CED8] hover:text-[#F29F05] hover:translate-x-2 transition-all cursor-pointer"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </nav>
           </div>
@@ -80,9 +84,9 @@ const Footer = () => {
                 'Charging Infrastructure',
                 'Fleet Management'
               ].map((service, index) => (
-                <div key={index} className="text-[#C9CED8] text-sm">
+                <Link key={index} to="/services" className="block text-[#C9CED8] text-sm hover:text-[#F29F05] transition-colors">
                   {service}
-                </div>
+                </Link>
               ))}
             </div>
           </div>
@@ -101,9 +105,9 @@ const Footer = () => {
                 { icon: 'ri-twitter-x-fill', href: '#' },
                 { icon: 'ri-youtube-fill', href: '#' }
               ].map((social, index) => (
-                <a 
+                <a
                   key={index}
-                  href={social.href} 
+                  href={social.href}
                   className="w-12 h-12 bg-white/5 hover:bg-[#F29F05] rounded-xl flex items-center justify-center text-[#F29F05] hover:text-white transition-all transform hover:scale-110 cursor-pointer"
                 >
                   <i className={`${social.icon} text-xl`}></i>
@@ -124,8 +128,10 @@ const Footer = () => {
 
           {/* Bottom Link */}
           <div className="text-center mt-8 pt-6 border-t border-white/5">
-            <a 
-              href="https://doctorbarns.com" 
+            <a
+              href="https://doctorbarns.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 text-[#C9CED8]/60 hover:text-[#F29F05] text-xs transition-colors cursor-pointer"
             >
               <i className="ri-global-line"></i>
