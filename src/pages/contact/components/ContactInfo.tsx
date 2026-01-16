@@ -26,10 +26,10 @@ const ContactInfo = () => {
       icon: 'ri-map-pin-line',
       title: 'Visit Us',
       description: 'Come see our vehicles and meet our team',
-      info: '62 Kwame Nkrumah Avenue, Adabraka',
+      info: 'Adabraka. Accra Ghana',
       action: 'Get Directions',
       color: 'bg-[#F29F05]',
-      href: 'https://www.google.com/maps/search/?api=1&query=62+Kwame+Nkrumah+Avenue,+Adabraka',
+      href: 'https://www.google.com/maps/search/?api=1&query=Adabraka.+Accra+Ghana',
       external: true
     },
     {

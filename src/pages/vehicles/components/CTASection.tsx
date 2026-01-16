@@ -58,7 +58,7 @@ const CTASection = () => {
                 </div>
                 <div className="flex items-center">
                   <i className="ri-map-pin-line text-[#F29F05] mr-3"></i>
-                  <span className="text-gray-700">62 Kwame Nkrumah Avenue, Adabraka. Accra Ghana</span>
+                  <span className="text-gray-700">Adabraka. Accra Ghana</span>
                 </div>
               </div>
             </div>

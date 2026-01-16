@@ -10,11 +10,11 @@ const LocationSection = () => {
               Our Location
             </span>
           </div>
-          
+
           <h2 className="text-4xl md:text-5xl font-bold text-[#0B1A33] mb-6">
             Visit Our Showroom
           </h2>
-          
+
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Experience our vehicles firsthand at our modern showroom in the heart of Accra. See the latest electric and fuel-powered vehicles up close.
           </p>
@@ -35,7 +35,7 @@ const LocationSection = () => {
                 title="A75 Mobility Location"
               ></iframe>
             </div>
-            
+
             {/* Location Badge */}
             <div className="absolute top-4 left-4 bg-white rounded-xl shadow-lg p-4 border border-gray-100">
               <div className="flex items-center">
@@ -56,7 +56,7 @@ const LocationSection = () => {
               <h3 className="text-2xl font-bold text-[#0B1A33] mb-6">
                 Showroom Details
               </h3>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="w-12 h-12 bg-[#F29F05]/10 rounded-xl flex items-center justify-center mr-4 mt-1">
@@ -64,8 +64,7 @@ const LocationSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-[#0B1A33] mb-1">Address</h4>
-                    <p className="text-gray-600">62 Kwame Nkrumah Avenue</p>
-                    <p className="text-gray-600">Adabraka, Accra Ghana</p>
+                    <p className="text-gray-600">Adabraka. Accra Ghana</p>
                   </div>
                 </div>
 
@@ -117,7 +116,7 @@ const LocationSection = () => {
               <p className="mb-6 opacity-90">
                 Located in the heart of Accra, our showroom is easily accessible by public transport and private vehicle. We're just minutes away from major landmarks.
               </p>
-              
+
               <div className="space-y-3 mb-6">
                 <div className="flex items-center">
                   <i className="ri-bus-line text-[#F29F05] mr-3"></i>
@@ -132,7 +131,7 @@ const LocationSection = () => {
                   <span>5 minutes walk from Kwame Nkrumah Circle</span>
                 </div>
               </div>
-              
+
               <button className="bg-[#F29F05] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#e89004] transition-colors cursor-pointer whitespace-nowrap">
                 Get Directions
               </button>

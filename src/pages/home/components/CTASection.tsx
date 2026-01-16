@@ -22,9 +22,9 @@ const CTASection = () => {
     {
       icon: 'ri-map-pin-line',
       title: 'Visit Us',
-      info: '62 Kwame Nkrumah Avenue, Adabraka. Accra Ghana',
+      info: 'Adabraka. Accra Ghana',
       action: 'Get Directions',
-      href: 'https://www.google.com/maps/search/?api=1&query=62+Kwame+Nkrumah+Avenue,+Adabraka.+Accra+Ghana',
+      href: 'https://www.google.com/maps/search/?api=1&query=Adabraka.+Accra+Ghana',
       external: true
     }
   ];

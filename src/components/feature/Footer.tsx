@@ -46,7 +46,7 @@ const Footer = () => {
                 <div className="w-8 h-8 bg-[#F29F05]/20 rounded-lg flex items-center justify-center">
                   <i className="ri-map-pin-line text-[#F29F05]"></i>
                 </div>
-                <span className="text-[#C9CED8]">62 Kwame Nkrumah Avenue, Adabraka. Accra Ghana</span>
+                <span className="text-[#C9CED8]">Adabraka. Accra Ghana</span>
               </div>
             </div>
           </div>

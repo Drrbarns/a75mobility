@@ -257,8 +257,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-[#0B1A33] mb-1">Address</h4>
-                    <p className="text-gray-600">62 Kwame Nkrumah Avenue</p>
-                    <p className="text-gray-600">Adabraka, Accra Ghana</p>
+                    <p className="text-gray-600">Adabraka. Accra Ghana</p>
                   </div>
                 </div>
 
