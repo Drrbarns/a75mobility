@@ -8,14 +8,14 @@ const StatsSection = () => {
       description: 'Electric and fuel-powered vehicles brought to Ghana'
     },
     {
-      number: '50+',
+      number: '5+',
       label: 'Local Partners',
       icon: 'ri-team-line',
       description: 'Strategic partnerships across the country'
     },
     {
-      number: '25+',
-      label: 'Charging Stations',
+      number: '20',
+      label: 'Charging stations',
       icon: 'ri-charging-pile-line',
       description: 'EV charging infrastructure deployed'
     },
@@ -53,11 +53,11 @@ const StatsSection = () => {
               Our Impact
             </span>
           </div>
-          
+
           <h2 className="text-4xl md:text-5xl font-bold text-[#0B1A33] mb-6">
             Numbers That Tell Our Story
           </h2>
-          
+
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Since our inception, we've been making measurable impact in Ghana's transportation sector through innovation and dedication.
           </p>
@@ -66,22 +66,22 @@ const StatsSection = () => {
         {/* Stats Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
-            <div 
+            <div
               key={index}
               className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 text-center group"
             >
               <div className="w-20 h-20 bg-gradient-to-br from-[#F29F05] to-[#e89004] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
                 <i className={`${stat.icon} text-3xl text-white`}></i>
               </div>
-              
+
               <div className="text-4xl md:text-5xl font-bold text-[#0B1A33] mb-3">
                 {stat.number}
               </div>
-              
+
               <h3 className="text-xl font-bold text-[#1E5AA8] mb-3">
                 {stat.label}
               </h3>
-              
+
               <p className="text-gray-600 leading-relaxed">
                 {stat.description}
               </p>
@@ -93,12 +93,12 @@ const StatsSection = () => {
         <div className="mt-20 bg-gradient-to-r from-[#F29F05] to-[#e89004] rounded-3xl p-12 text-center text-white relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#0B1A33]/20 rounded-full blur-2xl"></div>
-          
+
           <div className="relative z-10">
             <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
               <i className="ri-trophy-line text-4xl text-white"></i>
             </div>
-            
+
             <h3 className="text-3xl md:text-4xl font-bold mb-4">Leading Ghana's EV Revolution</h3>
             <p className="text-xl leading-relaxed max-w-3xl mx-auto opacity-90">
               Recognized as a pioneer in sustainable transportation, we continue to set new standards for electric vehicle adoption and infrastructure development in West Africa.

@@ -12,7 +12,7 @@ const WhyChooseSection = () => {
       icon: 'ri-handshake-line',
       title: 'Trusted International Manufacturers',
       description: 'Strategic partnerships with leading global vehicle and battery manufacturers for quality assurance.',
-      stat: '50+',
+      stat: '5+',
       statLabel: 'Partners'
     },
     {
@@ -60,11 +60,11 @@ const WhyChooseSection = () => {
             <i className="ri-star-line"></i>
             <span>Why Choose Us</span>
           </div>
-          
+
           <h3 className="text-5xl font-bold text-white mb-6">
             Why A75 Mobility <span className="text-[#F29F05]">Leads the Way</span>
           </h3>
-          
+
           <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
             Experience the difference with our comprehensive approach to mobility solutions
           </p>
@@ -81,29 +81,29 @@ const WhyChooseSection = () => {
                   <div className="w-16 h-16 bg-[#F29F05]/20 rounded-2xl flex items-center justify-center group-hover:bg-[#F29F05]/30 transition-colors">
                     <i className={`${advantage.icon} text-3xl text-[#F29F05]`}></i>
                   </div>
-                  
+
                   <div className="text-right">
                     <div className="text-2xl font-bold text-white">{advantage.stat}</div>
                     <div className="text-xs text-white/60">{advantage.statLabel}</div>
                   </div>
                 </div>
-                
+
                 <h4 className="text-xl font-bold text-white mb-4 group-hover:text-[#F29F05] transition-colors">
                   {advantage.title}
                 </h4>
-                
+
                 <p className="text-white/70 leading-relaxed">
                   {advantage.description}
                 </p>
-                
+
                 {/* Progress Bar */}
                 <div className="mt-6 h-1 bg-white/10 rounded-full overflow-hidden">
-                  <div 
+                  <div
                     className="h-full bg-gradient-to-r from-[#F29F05] to-[#1E5AA8] rounded-full transform -translate-x-full group-hover:translate-x-0 transition-transform duration-1000"
                   ></div>
                 </div>
               </div>
-              
+
               {/* Glow Effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-[#F29F05]/20 to-[#1E5AA8]/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity -z-10 blur-xl"></div>
             </div>

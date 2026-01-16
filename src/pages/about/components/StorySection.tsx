@@ -82,7 +82,7 @@ const StorySection = () => {
 
             <div className="absolute -top-8 -right-8 bg-white rounded-2xl shadow-xl p-6 border border-gray-100">
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#1E5AA8] mb-2">50+</div>
+                <div className="text-3xl font-bold text-[#1E5AA8] mb-2">5+</div>
                 <div className="text-sm text-gray-600">Local Partners</div>
               </div>
             </div>
