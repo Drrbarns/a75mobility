@@ -6,7 +6,7 @@ const HeroSection = () => {
       {/* Background Image & Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://readdy.ai/api/search-image?query=High%20tech%20automotive%20workshop%20electric%20vehicle%20maintenance%20modern%20clean%20facility%20professional&width=1920&height=1080&seq=services-hero&orientation=landscape"
+          src="/images/service-hero-bg.png"
           alt="A75 Mobility Service Center"
           className="w-full h-full object-cover"
         />
