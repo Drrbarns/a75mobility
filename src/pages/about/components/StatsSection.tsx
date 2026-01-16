@@ -8,14 +8,14 @@ const StatsSection = () => {
       description: 'Electric and fuel-powered vehicles brought to Ghana'
     },
     {
-      number: '5+',
+      number: '20+',
       label: 'Local Partners',
       icon: 'ri-team-line',
       description: 'Strategic partnerships across the country'
     },
     {
-      number: '20',
-      label: 'Charging stations',
+      number: '5+',
+      label: 'Charging Stations',
       icon: 'ri-charging-pile-line',
       description: 'EV charging infrastructure deployed'
     },

@@ -12,7 +12,7 @@ const WhyChooseSection = () => {
       icon: 'ri-handshake-line',
       title: 'Trusted International Manufacturers',
       description: 'Strategic partnerships with leading global vehicle and battery manufacturers for quality assurance.',
-      stat: '5+',
+      stat: '20+',
       statLabel: 'Partners'
     },
     {
