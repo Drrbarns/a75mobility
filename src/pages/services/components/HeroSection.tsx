@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-screen flex flex-col justify-between overflow-hidden">
       {/* Background Image & Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -14,8 +14,8 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-[#0B1A33]/90 via-[#0B1A33]/70 to-transparent"></div>
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full py-20 mt-16">
+      {/* Main Content - Pushed to center/top, ensuring no overlap */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full flex-grow flex flex-col justify-center py-20">
         <div className="max-w-3xl">
           {/* Badge */}
           <div className="mb-6">
@@ -53,25 +53,23 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Service Stats */}
-      <div className="absolute bottom-0 left-0 right-0 z-20">
-        <div className="max-w-7xl mx-auto px-6 pb-8">
-          <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 shadow-xl inline-block sm:w-auto w-full">
-            <div className="flex flex-row justify-between sm:gap-12 gap-4 text-white">
-              <div className="text-center px-4">
-                <div className="text-2xl md:text-3xl font-bold text-[#F29F05] mb-1">5+</div>
-                <div className="text-xs md:text-sm text-gray-300">Core Services</div>
-              </div>
-              <div className="w-px bg-white/10 my-1"></div>
-              <div className="text-center px-4">
-                <div className="text-2xl md:text-3xl font-bold text-[#F29F05] mb-1">24/7</div>
-                <div className="text-xs md:text-sm text-gray-300">Support</div>
-              </div>
-              <div className="w-px bg-white/10 my-1"></div>
-              <div className="text-center px-4">
-                <div className="text-2xl md:text-3xl font-bold text-[#F29F05] mb-1">100%</div>
-                <div className="text-xs md:text-sm text-gray-300">Satisfaction</div>
-              </div>
+      {/* Service Stats - In flow at bottom */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full pb-8">
+        <div className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 shadow-xl inline-block sm:w-auto w-full">
+          <div className="flex flex-row justify-between sm:gap-12 gap-4 text-white">
+            <div className="text-center px-4">
+              <div className="text-2xl md:text-3xl font-bold text-[#F29F05] mb-1">5+</div>
+              <div className="text-xs md:text-sm text-gray-300">Core Services</div>
+            </div>
+            <div className="w-px bg-white/10 my-1"></div>
+            <div className="text-center px-4">
+              <div className="text-2xl md:text-3xl font-bold text-[#F29F05] mb-1">24/7</div>
+              <div className="text-xs md:text-sm text-gray-300">Support</div>
+            </div>
+            <div className="w-px bg-white/10 my-1"></div>
+            <div className="text-center px-4">
+              <div className="text-2xl md:text-3xl font-bold text-[#F29F05] mb-1">100%</div>
+              <div className="text-xs md:text-sm text-gray-300">Satisfaction</div>
             </div>
           </div>
         </div>
