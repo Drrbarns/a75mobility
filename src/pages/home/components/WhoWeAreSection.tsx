@@ -11,7 +11,7 @@ const WhoWeAreSection = () => {
             {/* ... */}
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
               <img
-                src="https://readdy.ai/api/search-image?query=Futuristic%20electric%20vehicle%20assembly%20line%20with%20advanced%20robotics%20and%20AI%20technology%2C%20sleek%20modern%20electric%20cars%20being%20assembled%20by%20precision%20robots%2C%20clean%20high-tech%20manufacturing%20facility%20with%20blue%20LED%20lighting%20and%20sustainable%20production&width=700&height=500&seq=futuristic-assembly&orientation=landscape"
+                src="/images/who-we-are-assembly.png"
                 alt="Advanced EV Assembly and Innovation"
                 className="w-full h-[500px] object-cover object-top"
               />
